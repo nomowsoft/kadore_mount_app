@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 
+import '../../../products/presentation/pages/products_page.dart';
+
 class CategoryListSection extends StatelessWidget {
   const CategoryListSection({super.key});
 
@@ -45,7 +47,12 @@ class CategoryListSection extends StatelessWidget {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const ProductsPage()),
+                    );
+                  },
                   child: const Text(
                     'الكل',
                     style: TextStyle(color: Colors.green),

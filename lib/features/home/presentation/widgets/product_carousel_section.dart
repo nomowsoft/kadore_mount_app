@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
+import '../../../products/presentation/pages/products_page.dart';
 
 class ProductCarouselSection extends StatelessWidget {
   final String title;
@@ -51,7 +52,12 @@ class ProductCarouselSection extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const ProductsPage()),
+                    );
+                  },
                   child: const Text(
                     'مشاهدة الكل',
                     style: TextStyle(color: Colors.green),
