@@ -38,6 +38,9 @@ dependencies:
   get_it: ^9.2.1
   dio: ^5.9.1
   equatable: ^2.0.8
+  google_maps_flutter: ^2.14.2
+  flutter_localizations:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
