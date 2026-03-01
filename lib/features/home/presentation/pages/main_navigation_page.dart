@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../products/presentation/pages/products_page.dart';
 import '../../../orders/presentation/pages/orders_page.dart';
+import '../../../profile/presentation/pages/profile_page.dart';
 import 'home_page.dart';
 import '../widgets/custom_bottom_nav_bar.dart';
 
@@ -20,7 +21,7 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
     const HomePage(),
     const ProductsPage(), // We can reuse the existing ProductsPage directly!
     const OrdersPage(), // Replaced Favorites with Orders
-    const Center(child: Text('حسابي')), // Placeholder for Account
+    const ProfilePage(), // Replaced Account placeholder with ProfilePage
   ];
 
   @override
