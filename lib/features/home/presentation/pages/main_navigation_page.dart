@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../products/presentation/pages/products_page.dart';
+import '../../../orders/presentation/pages/orders_page.dart';
 import 'home_page.dart';
 import '../widgets/custom_bottom_nav_bar.dart';
 
@@ -18,7 +19,7 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
   final List<Widget> _pages = [
     const HomePage(),
     const ProductsPage(), // We can reuse the existing ProductsPage directly!
-    const Center(child: Text('المفضلة')), // Placeholder for Favorites
+    const OrdersPage(), // Replaced Favorites with Orders
     const Center(child: Text('حسابي')), // Placeholder for Account
   ];
 

@@ -45,8 +45,8 @@ class CustomBottomNavBar extends StatelessWidget {
             // Left Side Items (RTL)
             _buildNavItem(
               index: 2,
-              icon: Icons.favorite_border,
-              label: 'المفضلة',
+              icon: Icons.receipt_long_outlined,
+              label: 'طلباتي',
               isSelected: currentIndex == 2,
             ),
             _buildNavItem(
