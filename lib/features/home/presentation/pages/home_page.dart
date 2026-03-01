@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../cart/presentation/pages/cart_page.dart';
 import '../widgets/category_list_section.dart';
 import '../widgets/live_map_section.dart';
 import '../widgets/product_carousel_section.dart';
@@ -13,14 +14,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true, // Allow map to go behind app bar
       appBar: AppBar(
-       // backgroundColor: Colors.transparent,
+        // backgroundColor: Colors.transparent,
         elevation: 0,
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: IconButton(
-            icon: const Icon(Icons.menu, ),
-            onPressed: () {},
-          ),
+          child: IconButton(icon: const Icon(Icons.menu), onPressed: () {}),
         ),
         actions: [
           Padding(
@@ -29,10 +27,13 @@ class HomePage extends StatelessWidget {
               alignment: Alignment.center,
               children: [
                 IconButton(
-                  icon: const Icon(
-                    Icons.shopping_cart_outlined,
-                  ),
-                  onPressed: () {},
+                  icon: const Icon(Icons.shopping_cart_outlined),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const CartPage()),
+                    );
+                  },
                 ),
                 Positioned(
                   right: 4,
@@ -76,30 +77,9 @@ class HomePage extends StatelessWidget {
           SliverToBoxAdapter(
             child: ProductCarouselSection(title: 'وصل حديثاً'),
           ),
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Theme.of(context).primaryColor,
-        unselectedItemColor: Colors.grey,
-        showUnselectedLabels: true,
-        type: BottomNavigationBarType.fixed,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: 'الرئيسية',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.receipt_long_outlined),
-            label: 'طلباتي',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.local_offer_outlined),
-            label: 'العروض',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: 'حسابي',
-          ),
+
+          // Spacer for Bottom Navigation Bar
+          const SliverToBoxAdapter(child: SizedBox(height: 100)),
         ],
       ),
     );

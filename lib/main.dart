@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'core/di/injector.dart';
 import 'core/theme/app_theme.dart';
-import 'features/home/presentation/pages/home_page.dart';
+import 'features/home/presentation/pages/main_navigation_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +30,7 @@ class KadoreApp extends StatelessWidget {
         Locale('en', ''), // English
       ],
       locale: const Locale('ar', ''), // Default to Arabic
-      home: const HomePage(),
+      home: const MainNavigationPage(),
     );
   }
 }
