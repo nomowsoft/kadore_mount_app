@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kadore_mount/features/driver/presentation/pages/driver_main_navigation_page.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../widgets/profile_header.dart';
 import '../widgets/loyalty_points_card.dart';
@@ -142,6 +143,19 @@ class ProfilePage extends StatelessWidget {
                         icon: Icons.help_outline,
                         title: 'المساعدة والدعم',
                         onTap: () {},
+                      ),
+                      const Divider(height: 1),
+                      AccountSectionTile(
+                        icon: Icons.local_shipping_outlined,
+                        title: 'واجهة السائق (للتجربة)',
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const DriverMainNavigationPage(),
+                            ),
+                          );
+                        },
                       ),
                       const Divider(height: 1),
                       AccountSectionTile(
