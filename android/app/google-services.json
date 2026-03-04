@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "476592619044",
+    "project_id": "kadore-mount-app",
+    "storage_bucket": "kadore-mount-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476592619044:android:fc189df306e43aadb962b1",
+        "android_client_info": {
+          "package_name": "com.example.kadore_mount"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxuyJKpjaeJePI0da2E3uKjW_unBRdb0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

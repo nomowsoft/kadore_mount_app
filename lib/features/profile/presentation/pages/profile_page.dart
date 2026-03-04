@@ -115,13 +115,13 @@ class ProfilePage extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
-                      AccountSectionTile(
-                        icon: Icons.language,
-                        title: 'اللغة',
-                        subtitle: 'العربية',
-                        onTap: () {},
-                      ),
-                      const Divider(height: 1),
+                      // AccountSectionTile(
+                      //   icon: Icons.language,
+                      //   title: 'اللغة',
+                      //   subtitle: 'العربية',
+                      //   onTap: () {},
+                      // ),
+                      // const Divider(height: 1),
                       AccountSectionTile(
                         icon: Icons.notifications_outlined,
                         title: 'الإشعارات',
@@ -129,7 +129,7 @@ class ProfilePage extends StatelessWidget {
                         trailing: Switch(
                           value: true,
                           onChanged: (val) {},
-                          activeColor: AppColors.primary,
+                          activeThumbColor: AppColors.primary,
                         ),
                       ),
                       const Divider(height: 1),

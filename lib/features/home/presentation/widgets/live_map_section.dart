@@ -106,24 +106,25 @@ class LiveMapSection extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const SizedBox(width: 12),
-                    // Track Route Button
-                    ElevatedButton.icon(
-                      onPressed: () {},
-                      icon: const Icon(Icons.map, size: 18),
-                      label: const Text('تتبع المسار'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.greenAccent[400],
-                        foregroundColor: AppColors.primary,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 16,
-                          vertical: 8,
-                        ),
-                      ),
-                    ),
+
+                    // const SizedBox(width: 12),
+                    // // Track Route Button
+                    // ElevatedButton.icon(
+                    //   onPressed: () {},
+                    //   icon: const Icon(Icons.map, size: 18),
+                    //   label: const Text('تتبع المسار'),
+                    //   style: ElevatedButton.styleFrom(
+                    //     backgroundColor: Colors.greenAccent[400],
+                    //     foregroundColor: AppColors.primary,
+                    //     shape: RoundedRectangleBorder(
+                    //       borderRadius: BorderRadius.circular(8),
+                    //     ),
+                    //     padding: const EdgeInsets.symmetric(
+                    //       horizontal: 16,
+                    //       vertical: 8,
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
@@ -134,3 +135,4 @@ class LiveMapSection extends StatelessWidget {
     );
   }
 }
+//اقرب موقع للتوصيل هو مسار الشاحنة بالكامل

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../widgets/driver_order_card.dart';
@@ -69,7 +70,21 @@ class DriverOrderDetailsPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (_) => const DriverDeliveryMapPage(),
+                              builder: (_) => DriverDeliveryMapPage(
+                                driverId:
+                                    1, // TODO: Replace with actual driver ID
+                                orderId:
+                                    int.tryParse(
+                                      orderId.replaceAll(RegExp(r'[^0-9]'), ''),
+                                    ) ??
+                                    0,
+                                customerName: customerName,
+                                customerAddress: location,
+                                customerLocation: const LatLng(
+                                  24.7136, // TODO: Replace with actual customer lat
+                                  46.6753, // TODO: Replace with actual customer lng
+                                ),
+                              ),
                             ),
                           );
                         },

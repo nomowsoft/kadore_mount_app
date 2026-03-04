@@ -65,7 +65,7 @@ class CartPage extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               decoration: BoxDecoration(
-                color: Colors.black.withOpacity(0.2),
+                color: Colors.black.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Row(
@@ -86,7 +86,7 @@ class CartPage extends StatelessWidget {
                   Text(
                     'تغيير',
                     style: TextStyle(
-                      color: AppColors.sandyGold.withOpacity(0.8),
+                      color: AppColors.sandyGold.withValues(alpha: 0.8),
                       fontSize: 12,
                     ),
                   ),
@@ -138,7 +138,7 @@ class CartPage extends StatelessWidget {
             color: Colors.white,
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.05),
+                color: Colors.black.withValues(alpha: 0.05),
                 blurRadius: 10,
                 offset: const Offset(0, -5),
               ),
